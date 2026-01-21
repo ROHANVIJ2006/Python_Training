@@ -9,7 +9,7 @@ else:
     print("True")
 
 nums=[1,2,3,1,4,5]
-def containsDuplicate(self, nums: List[int]) -> bool:
+def containsDuplicate(self, nums: list[int]) -> bool:
     m={}
     for _ in nums:
         if _ in m:
