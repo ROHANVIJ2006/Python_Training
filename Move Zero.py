@@ -5,11 +5,22 @@ for i in range(len(nums)):
         nums[i], nums[j] = nums[j], nums[i]
         j += 1
 print(nums)'''
-r=range(10)
+'''r=range(10)
 r=iter(r)
 while True:
     try:
         d=next(r)
         print(d)
     except StopIteration:
-        break
+        break'''
+
+def fib(n):
+    a, b = 0, 1
+
+    while n:
+        print(a, end=" ")
+        a, b = b, a + b
+        n -= 1
+
+
+fib(10)
