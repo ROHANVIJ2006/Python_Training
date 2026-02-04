@@ -21,6 +21,4 @@ def fib(n):
         print(a, end=" ")
         a, b = b, a + b
         n -= 1
-
-
 fib(10)
