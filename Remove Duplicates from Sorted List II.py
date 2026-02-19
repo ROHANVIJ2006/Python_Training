@@ -24,3 +24,33 @@ class Solution:
             head = head.next
 
         return dummy.next
+
+    '''class Solution:
+    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        temp = None
+        h = t = None
+
+        while head:
+            
+            # Case 1: Duplicate detected
+            if head.next and head.val == head.next.val:
+                dup = head.val
+                
+                # Skip entire duplicate group
+                while head and head.val == dup:
+                    head = head.next
+            
+            else:
+                # Unique node → add to new list
+                tm = head
+                head = head.next
+                tm.next = None
+                
+                if h is None:
+                    h = t = tm
+                else:
+                    t.next = tm
+                    t = tm
+
+        return h
+'''
